@@ -1,5 +1,38 @@
 import offlineLogImg from '@/assets/image/screenshot/v1.9.2-offline-log-size.png';
 
+## v2.0.2
+
+- 🐛 Fixed the issue where the default value of DataHarborPlugin caused download failure.
+
+## v2.0.1
+
+- 🆕 `DataHarborPlugin` add [onAfterUpload](./data-harbor#constructor) param to custom behavior after upload。See details: https://github.com/HuolalaTech/page-spy/pull/119;
+- 🐛 Fix some issues. See details: https://github.com/HuolalaTech/page-spy/pull/118 / https://github.com/HuolalaTech/page-spy/pull/120;
+
+## v2.0.0
+
+- 🆕 Revamped browser-side modal with support for custom theme colors and branding. Added a time-range log selector and a notes field. See details: https://github.com/HuolalaTech/page-spy/pull/113
+- 🆕 Added a method for mini-programs to trigger a modal displaying PageSpy information, with support for uploading offline logs. See details: https://github.com/HuolalaTech/page-spy/pull/112
+- 🐛 Fixed some issues.
+
+## v1.9.6
+
+- 🆕 DataHarborPlugin added a new prototype method. See details: https://github.com/HuolalaTech/page-spy/pull/110;
+  - `$harbor.pause()`: Pause recording;
+  - `$harbor.resume()`: Resume recording, corresponding to `pause()`;
+  - `$harbor.reharbor()`: Clear the recorded data and remakes it.
+- 🆕 Add new prompt for "Object cannot be expanded" on the replay page;
+- 🐛 Fixed the display of `application/x-www-form-urlencoded` payload. See details: https://github.com/HuolalaTech/page-spy-web/issues/267;
+
+## v1.9.5
+
+- 🆕 Add DockerHub image: https://hub.docker.com/r/huolalatech/page-spy-web;
+- 🆕 Support deploy with Baota and add deploy guide；
+
+## v1.9.4
+
+- 🐛 Fix some issues;
+
 ## v1.9.3
 
 - 🆕 The Network panel now supports keyword filtering. View details: https://github.com/HuolalaTech/page-spy-web/pull/262 ;

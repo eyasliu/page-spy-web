@@ -1,5 +1,38 @@
 import offlineLogImg from '@/assets/image/screenshot/v1.9.2-offline-log-size.png';
 
+## v2.0.2
+
+- 🐛 修复 `DataHarborPlugin` 的默认值导致无法下载；
+
+## v2.0.1
+
+- 🆕 `DataHarborPlugin` 支持传入 [onAfterUpload](./data-harbor#constructor) 自定义上传后的动作。查看详情：https://github.com/HuolalaTech/page-spy/pull/119 ；
+- 🐛 修复一些问题。查看详情：https://github.com/HuolalaTech/page-spy/pull/118 、https://github.com/HuolalaTech/page-spy/pull/120 ；
+
+## v2.0.0
+
+- 🆕 浏览器端弹窗改版，支持定制主题色、品牌，新增时间段日志选择器、备注字段。查看详情：https://github.com/HuolalaTech/page-spy/pull/113 ；
+- 🆕 小程序端新增方法唤起弹窗显示 PageSpy 信息，并支持上传离线日志。查看详情：https://github.com/HuolalaTech/page-spy/pull/112 ；
+- 🐛 修复一些问题；
+
+## v1.9.6
+
+- 🆕 DataHarborPlugin 插件新增原型方法。查看详情：https://github.com/HuolalaTech/page-spy/pull/110 ；
+  - `$harbor.pause()`：暂停记录；
+  - `$harbor.resume()`: 恢复记录，和 `pause()` 对应；
+  - `$harbor.reharbor()`：清空已记录的数据并重新制作。
+- 🆕 回放页面对于「对象不可展开」新增提示；
+- 🐛 修复 `application/x-www-form-urlencoded` 展示的 Payload。查看详情：https://github.com/HuolalaTech/page-spy-web/issues/267 ；
+
+## v1.9.5
+
+- 🆕 新增 DockerHub 镜像: https://hub.docker.com/r/huolalatech/page-spy-web;
+- 🆕 新增 宝塔 一键部署说明文档；
+
+## v1.9.4
+
+- 🐛 修复一些问题；
+
 ## v1.9.3
 
 - 🆕 调试端 Network 面板支持关键字筛选过滤。查看详情：https://github.com/HuolalaTech/page-spy-web/pull/262 ；

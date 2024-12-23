@@ -14,6 +14,8 @@
     "device-id": "Device ID",
     "os": "OS",
     "browser": "Browser",
+    "harmony": "HarmonyOS",
+    "rn": "React Native",
     "miniprogram": "Mini Program",
     "mpwechat": "WeChat Mini Program",
     "mpqq": "QQ Mini Program",
@@ -45,7 +47,8 @@
     "copied": "Copied",
     "prev": "Previous",
     "next": "Next",
-    "replay-lab": "Replay Lab"
+    "replay-lab": "Replay Lab",
+    "toc": "Table of Contents"
   },
   "error": {
     "oops": "Oops! Errors happened~",
@@ -93,6 +96,8 @@
     "doesTitle": "Inspect Runtime,<br/>Remote!",
     "provides": "What we provide",
     "providesTitle": "Out-of-box <1>SDK</1> and<br /> <4>debugger client</4>",
+    "load-script": "First, load the file",
+    "init-instance": "Then, configure (optional) and initialize",
     "welcome": "Welcome to use PageSpy"
   },
   "selConn": {
@@ -226,12 +231,20 @@
     "delete-title": "Delete Log",
     "delete-desc": "Are you sure you want to delete this log?",
     "client": "Client Information",
-    "download-file": "Download Log",
+    "download-file": "Download",
     "update-layout": "Update Layout",
     "speed": "Speed",
     "delete-select": "Delete Selected",
     "delete-select-desc": "Are you sure you want to delete selected logs?",
-    "unsupport-spread": "Cannot spread object in offline mode"
+    "unsupport-spread": "<0>Objects cannot be expanded by default. Set <1><0>serializeData: true</0></1> to enable.</0>",
+    "remark": "Remarks",
+    "meta-info": "Basic Information",
+    "meta": {
+      "ua": "UserAgent",
+      "title": "Title",
+      "url": "Link",
+      "remark": "Remark"
+    }
   },
   "lab": {
     "welcome": "Welcome to the Replay Lab!",

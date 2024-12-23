@@ -1,4 +1,4 @@
-import { SpyNetwork } from '@huolala-tech/page-spy-types';
+import type { RequestItem } from '@huolala-tech/page-spy-base';
 import {
   EventType,
   eventWithTime,
@@ -19,10 +19,9 @@ export function getFileExtension(url: string) {
   // 移除查询参数
   const pathWithoutQuery = origin.split('?')[0];
 
-  const lastDotIndex = pathWithoutQuery.lastIndexOf('.');
-  if (lastDotIndex === -1) return '';
+  const ext = pathWithoutQuery.match(/\.([^.\/\\]+)$/);
 
-  return pathWithoutQuery.substring(lastDotIndex + 1);
+  return ext?.[1];
 }
 
 export function resolveProtocol() {
@@ -99,7 +98,7 @@ export function resolveUrlInfo(url: string): ResolvedUrlInfo {
   }
 }
 
-export type ResolvedNetworkInfo = SpyNetwork.RequestInfo & ResolvedUrlInfo;
+export type ResolvedNetworkInfo = RequestItem & ResolvedUrlInfo;
 
 interface RRWebClickEvent {
   type: EventType.IncrementalSnapshot;
